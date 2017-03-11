@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
   while (data_flag) {
     data_flag = robot_sim.OneStepForward();
     cv::imshow("Laser Beam", robot_sim.wean_drawing_copy);
-    if(cv::waitKey(25) == 'q')
+    if(cv::waitKey(2) == 'q')
       {
         break;
       }
